@@ -14,14 +14,14 @@ public class Header {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Long id;
-   private String img_header;
+   private String link_red;
       
    public Header(){
     
 }
-   public Header(Long id,String img_header){
+   public Header(Long id,String link_red){
             this.id =id;
-            this.img_header = img_header;
+            this.link_red = link_red;
 }
   
 
