@@ -10,5 +10,7 @@ public interface IProjectService  {
     public void crearProject(Project proj);
     public void borrarProject(Long id);
        public Project findProject(Long id);
-    
+    public boolean existsById(int id);
+
+    public Object getOne(int id); 
 }
