@@ -24,12 +24,12 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 public class ProjectController {
     @Autowired private IProjectService projServ;
- @GetMapping("/ver/Project")
+ @GetMapping("/ver/project")
     public List<Project> verProject() {
         return projServ.verProject();
     }
 
-    @PostMapping("/new/Project")
+    @PostMapping("/new/project")
     public void crearProject(@RequestBody Project proj) {
         projServ.crearProject(proj);
     }
