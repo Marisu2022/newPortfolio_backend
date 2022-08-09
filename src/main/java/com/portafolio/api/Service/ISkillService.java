@@ -13,4 +13,7 @@ public interface ISkillService  {
     public void crearSkill(Skill sk);
     public void borrarSkill(Long id);
        public Skill findSkill(Long id);
+       public boolean existsById(int id);
+
+    public Object getOne(int id);
 }
