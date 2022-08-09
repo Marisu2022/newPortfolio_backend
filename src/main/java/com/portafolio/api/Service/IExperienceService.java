@@ -14,4 +14,7 @@ public interface IExperienceService {
     public void crearExperience(Experience exp);
     public void borrarExperience(Long id);
     public Experience findExperience(Long id);
+     public boolean existsById(int id);
+
+    public Object getOne(int id);
 }
