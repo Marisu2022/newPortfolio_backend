@@ -35,5 +35,15 @@ public class ExperienceService implements IExperienceService {
     public Experience findExperience(Long id) {
        return expRepo.findById(id).orElse(null);
     }
+    @Override
+    public boolean existsById(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public Object getOne(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
     
 }
