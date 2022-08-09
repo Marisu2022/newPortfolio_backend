@@ -28,16 +28,16 @@ public class OthersController {
     public List<Others> verOthers(){
       return othServ.verOthers();
     }
-    @PostMapping("Others/newothers")
+    @PostMapping("/new/others")
     public void crearOthers(@RequestBody Others oth) {
         othServ.crearOthers(oth);
     }
-     @DeleteMapping("/others/delete/{id}")
+     @DeleteMapping("/delete/others/{id}")
     public void borrarOthers(@PathVariable Long id) {
         othServ.borrarOthers(id);
     }
     
-     @PutMapping("Others/editar/{id}")
+     @PutMapping("/editar/others/{id}")
     public Others editOthers(@PathVariable Long id,
                                @RequestParam("item") String nuevoItem
                                ) {
