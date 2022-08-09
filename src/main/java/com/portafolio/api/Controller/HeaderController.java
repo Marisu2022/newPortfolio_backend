@@ -28,7 +28,7 @@ public class HeaderController {
         return headServ.verHeader();
     }
 
-    @PostMapping("/new/Header")
+    @PostMapping("/new/header")
     public void crearHeader(@RequestBody Header head) {
         headServ.crearHeader(head);
     }
@@ -39,10 +39,10 @@ public class HeaderController {
     }
 
     @PutMapping("/editar/header/{id}")
-    public Header editHeader(@PathVariable Long id,@RequestParam("img_header")String nuevoImg_header) {
+    public Header editHeader(@PathVariable Long id,@RequestParam("linK_red")String nuevoLink_red) {
         Header head = headServ.findHeader(id);
         
-        head.setImg_header(nuevoImg_header);
+        head.setLink_red(nuevoLink_red);
         
         headServ.crearHeader(head);
         return head;
