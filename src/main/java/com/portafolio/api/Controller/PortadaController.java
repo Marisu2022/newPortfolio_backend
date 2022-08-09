@@ -28,7 +28,7 @@ public class PortadaController {
         return portServ.verPortada();
     }
 
-    @PostMapping("/new/Portada")
+    @PostMapping("/new/portada")
     public void crearPortada(@RequestBody Portada port) {
         portServ.crearPortada(port);
     }
