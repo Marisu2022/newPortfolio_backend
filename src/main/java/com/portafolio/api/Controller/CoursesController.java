@@ -39,7 +39,7 @@ public class CoursesController {
         courseServ.borrarCourses(id);
     }
 
-    @PutMapping("/editar/courses/{id}"")
+    @PutMapping("/editar/courses/{id}")
     public Courses editCourses(@PathVariable Long id,
             @RequestParam("curso") String nuevoCurso) {
         Courses courses = courseServ.findCourses(id);
