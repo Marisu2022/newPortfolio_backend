@@ -9,6 +9,9 @@ public interface IAboutService {
     public void crearAbout(About abt);
     public void borrarAbout(Long id);
     public About findAbout(Long id);
+public boolean existsById(int id);
+
+    public Object getOne(int id);
 
   
 }
