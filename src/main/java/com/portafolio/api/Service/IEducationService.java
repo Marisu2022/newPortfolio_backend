@@ -12,5 +12,7 @@ public interface IEducationService {
     public void crearEducation(Education edu);
     public void borrarEducation(Long id);
     public Education findEducation(Long id);
+ public boolean existsById(int id);
 
+    public Object getOne(int id);
 }
