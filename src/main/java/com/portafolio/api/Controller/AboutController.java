@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping()
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class AboutController {
 
     @Autowired
@@ -50,10 +50,10 @@ public class AboutController {
 
     @PutMapping("/editar/about/{id}")
     public About editAbout(@PathVariable Long id,
-            @RequestParam("about") String nuevoAbout) {
+            @RequestParam("about_me") String nuevoAbout_me) {
         About abt = abtServ.findAbout(id);
 
-        abt.setAbout(nuevoAbout);
+        abt.setAbout(nuevoAbout_me);
 
         abtServ.crearAbout(abt);
         return abt;
