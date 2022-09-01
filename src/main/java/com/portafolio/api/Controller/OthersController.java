@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping()
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class OthersController {
     @Autowired  IOthersService othServ;
    @GetMapping("/ver/others")
