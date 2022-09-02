@@ -14,18 +14,16 @@ public class About {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    private String about;
+    private String about_me;
             
     public About(){
     
 }
-   public About(Long id,String about){
+   public About(Long id,String about_me){
             this.id =id;
-            this.about = about;
+            this.about_me = about_me;
 }
-    public void setAbout(String nuevoAbout) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+  
    
 
    
