@@ -23,6 +23,9 @@ public class About {
             this.id =id;
             this.about_me = about_me;
 }
+     public void setAbout(String nuevoAbout) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
   
    
 
