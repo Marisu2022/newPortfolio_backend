@@ -50,7 +50,7 @@ public class AboutController {
 
     @PutMapping("/editar/about/{id}")
     public About editAbout(@PathVariable Long id,
-            @RequestParam("about_me") String nuevoAbout) {
+            @RequestParam("about") String nuevoAbout) {
         About abt = abtServ.findAbout(id);
 
         abt.setAbout(nuevoAbout);
