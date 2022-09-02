@@ -30,7 +30,7 @@ private ISkillService skServ;
         return skServ.verSkill();
     }
 
-    @PostMapping("/new/Skill")
+    @PostMapping("/new/skill")
     public void crearSkill(@RequestBody Skill sk) {
         skServ.crearSkill(sk);
     }
