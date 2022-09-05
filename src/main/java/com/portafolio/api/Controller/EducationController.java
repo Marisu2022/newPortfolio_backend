@@ -43,11 +43,11 @@ public class EducationController {
     @PutMapping("/editar/education/{id}")
     public Education editEducation(@PathVariable Long id,
             @RequestParam("detalle") String nuevoDetalle,
-            @RequestParam("img_institucion") String nuevoImg_institucion) {
+            @RequestParam("img_institution") String nuevoImg_institucion) {
         Education edu = eduServ.findEducation(id);
 
         edu.setDetalle(nuevoDetalle);
-        edu.setImg_institucion(nuevoImg_institucion);
+        edu.setImg_institution(nuevoImg_institution);
         eduServ.crearEducation(edu);
         return edu;
     }
