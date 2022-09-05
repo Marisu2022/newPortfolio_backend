@@ -25,7 +25,7 @@ public class Skill {
  public Skill(Long id, Long percent , String text_circle){
             this.id =id;
             this.text_circle = text_circle;
-            this.percent_circle= percent;
+            this.percent= percent;
             
           
         }
