@@ -17,15 +17,15 @@ public class Skill {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long percent_circle;
+    private Long percent;
     private String text_circle;
  public Skill(){
             
         }
- public Skill(Long id, Long percent_circle , String text_circle){
+ public Skill(Long id, Long percent , String text_circle){
             this.id =id;
             this.text_circle = text_circle;
-            this.percent_circle= percent_circle;
+            this.percent_circle= percent;
             
           
         }
