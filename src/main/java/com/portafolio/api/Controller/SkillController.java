@@ -42,13 +42,13 @@ private ISkillService skServ;
 
     @PutMapping("/editar/skill/{id}")
     public Skill editSkill(@PathVariable Long id,
-            @RequestParam("percent_circle") Long nuevoPercent_circle,
+            @RequestParam("percent") Long nuevoPercent,
             @RequestParam("text_circle") String nuevoText_circle)
              {
         
         Skill sk = skServ.findSkill(id);
 
-        sk.setPercent_circle(nuevoPercent_circle);
+        sk.setPercent(nuevoPercent);
         sk.setText_circle(nuevoText_circle);
                
        skServ.crearSkill(sk);
